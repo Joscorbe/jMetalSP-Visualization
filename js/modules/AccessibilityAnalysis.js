@@ -88,7 +88,7 @@ var AccessibilityAnalysis = (function(w) {
         writer.close();
         var url;
         if (location.hostname.match('openrouteservice') || location.hostname.match('localhost')) {
-            url = "cgi-bin/proxy.cgi?url=" + namespaces.services.analyse;
+            url = namespaces.services.analyse;
         } else {
             url = namespaces.services.analyse;
         }

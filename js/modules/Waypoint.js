@@ -70,7 +70,7 @@ var Waypoint = (function(w) {
         };
         var url;
         if (location.hostname.match('openrouteservice') || location.hostname.match('localhost')) {
-            url = "cgi-bin/proxy.cgi?url=" + namespaces.services.geocoding;
+            url = namespaces.services.geocoding;
         } else {
             url = namespaces.services.geocoding;
         }

@@ -659,7 +659,7 @@ var Preferences = (function(w) {
      */
     var url;
     if (location.hostname.match('openrouteservice') || location.hostname.match('localhost')) {
-        url = "cgi-bin/proxy.cgi?url=" + namespaces.services.shorten;
+        url = namespaces.services.shorten;
     } else {
         url = namespaces.services.shorten;
     }

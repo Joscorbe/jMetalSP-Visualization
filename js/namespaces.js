@@ -80,7 +80,7 @@ namespaces.overlayTmcLines = '';
 var generateUrl = function(service) {
     var url;
     if (location.hostname.match('openrouteservice') || location.hostname.match('localhost')) {
-        url = "cgi-bin/proxy.cgi?url=" + service;
+        url = service;
     } else {
         url = service;
     }

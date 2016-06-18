@@ -166,7 +166,7 @@ var Map = (function() {
         // load graph info when map loaded
         var url;
         if (location.hostname.match('openrouteservice') || location.hostname.match('localhost')) {
-            url = "cgi-bin/proxy.cgi?url=" + namespaces.services.routing + "?info";
+            url = namespaces.services.routing + "?info";
         } else {
             url = namespaces.services.routing + "?info";
         }

@@ -230,7 +230,7 @@ var Route = (function(w) {
         writer.close();
         var url;
         if (location.hostname.match('openrouteservice') || location.hostname.match('localhost')) {
-            url = "cgi-bin/proxy.cgi?url=" + namespaces.services.routing;
+            url = namespaces.services.routing;
         } else {
             url = namespaces.services.routing;
         }
